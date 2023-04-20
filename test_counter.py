@@ -1,6 +1,5 @@
 # ======================================================= 
 # counter.py is a program checking whether numbers are even
-# or odd within the range of 0-10
 # ------------------------------------
 # @author C.H. 
 # @since: 18/04/2023 
