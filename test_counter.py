@@ -31,9 +31,19 @@ if runtest == 0:
 class test_counter(unittest.TestCase):
 
     def test_counter_success(self): 
-        testnum = 2               
+        testnum = 3
         actual = even_or_odd(testnum)
         expected = 'is odd'      
+        try:
+            assert actual == expected 
+            print('Test successful! ' + 'Number ' + str(testnum) + ' ' + expected)       
+        except:
+            print('Error in test result! ' + 'Number ' + str(testnum) + ' ' + actual)   
+
+    def test_counter_success_2(self): 
+        testnum = 3
+        actual = even_or_odd(testnum)
+        expected = 'is even'      
         try:
             assert actual == expected 
             print('Test successful! ' + 'Number ' + str(testnum) + ' ' + expected)       
